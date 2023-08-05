@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
-from './Diabetes-pred/' import trained_model.pkl
+from 'Diabetes-pred/' import trained_model.pkl
 
 
 # loading the saved model
