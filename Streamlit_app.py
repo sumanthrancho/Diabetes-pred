@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
-import trained_model
+
 
 
 # loading the saved model
