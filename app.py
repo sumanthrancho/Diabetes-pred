@@ -1,16 +1,16 @@
 import numpy as np
 import pickle
 import streamlit as st
-
+import joblib
 import requests
 import pickle
 
 
-raw_url = "https://github.com/sumanthrancho/Diabetes-pred/raw/main/trained_model.pkl"
-response = requests.get(raw_url)
+raw_url = "https://github.com/sumanthrancho/Diabetes-pred/raw/main/model.joblib"
+# response = requests.get(raw_url)
 
-loaded_model = pickle.loads(response.content)
-
+# loaded_model = pickle.loads(response.content)
+loaded_model = joblib.load(raw_url)
 
 
 # creating a function for Prediction
